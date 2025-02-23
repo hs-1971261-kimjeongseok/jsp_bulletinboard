@@ -1,0 +1,10 @@
+
+CREATE TABLE comments (
+    comment_id INT AUTO_INCREMENT PRIMARY KEY,
+    board_num INT,
+    m_id VARCHAR(15),
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (board_num) REFERENCES board(board_num),
+    FOREIGN KEY (m_id) REFERENCES member2(m_name)
+);

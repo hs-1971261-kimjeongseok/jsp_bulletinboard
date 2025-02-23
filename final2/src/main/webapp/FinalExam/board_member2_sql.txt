@@ -1,0 +1,16 @@
+
+
+create table board (
+       board_title varchar(20), 
+       board_num INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+       board_name varchar(20), 
+       board_id varchar(10), 
+       board_date varchar(20),
+       board_content varchar(200)
+);
+
+create table member2 (
+       m_id varchar(15) PRIMARY KEY, 
+       m_pw varchar(15), 
+       m_name varchar(25)
+);
